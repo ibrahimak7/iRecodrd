@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2vA-QX-XI1">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,18 +11,78 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Bcg-P4-fYR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iRecord" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="hJW-BF-q0g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M3Z-fY-WxU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="naZ-f0-9eb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="listAllRecord" id="hef-wG-TJh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqY-Om-7hN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1271" y="755"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="slz-0k-62F">
+            <objects>
+                <viewController id="pmO-vZ-nl0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWG-kQ-cVo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7ht-pY-dZQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS3-Zv-0Pv">
+                                <rect key="frame" x="137.66666666666666" y="609" width="100" height="100"/>
+                                <state key="normal" image="OnAudio"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7ht-pY-dZQ" firstAttribute="bottom" secondItem="ZrK-ZS-dsv" secondAttribute="bottom" id="H00-XS-DCS"/>
+                            <constraint firstItem="xS3-Zv-0Pv" firstAttribute="centerX" secondItem="dWG-kQ-cVo" secondAttribute="centerX" id="Rme-sP-XJt"/>
+                            <constraint firstItem="ZrK-ZS-dsv" firstAttribute="bottom" secondItem="xS3-Zv-0Pv" secondAttribute="bottom" constant="20" id="WR6-BU-HuV"/>
+                            <constraint firstItem="7ht-pY-dZQ" firstAttribute="leading" secondItem="dWG-kQ-cVo" secondAttribute="leading" id="fh6-9v-ckj"/>
+                            <constraint firstItem="7ht-pY-dZQ" firstAttribute="top" secondItem="dWG-kQ-cVo" secondAttribute="top" id="hFK-dO-ZNM"/>
+                            <constraint firstItem="7ht-pY-dZQ" firstAttribute="centerX" secondItem="xS3-Zv-0Pv" secondAttribute="centerX" id="wHa-sV-hDV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZrK-ZS-dsv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="audioTab" id="SK6-Lr-asz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYv-AV-I24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173.5999999999999" y="37.684729064039409"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1nN-b5-TJg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="2vA-QX-XI1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p6Z-bN-RDl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pmO-vZ-nl0" kind="relationship" relationship="viewControllers" id="9Dq-IV-vVp"/>
+                        <segue destination="hJW-BF-q0g" kind="relationship" relationship="viewControllers" id="qD0-6a-Ps6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1b-H8-XAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.2" y="37.684729064039409"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="OnAudio" width="100" height="100"/>
+        <image name="audioTab" width="30" height="30"/>
+        <image name="background" width="375" height="812"/>
+        <image name="listAllRecord" width="30" height="30"/>
+    </resources>
 </document>
